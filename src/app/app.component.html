@@ -1,0 +1,37 @@
+<div class="d-flex justify-content-center align-items-center card top ">
+  <div class="d-flex justify-content-center align-items-center shadow rounded bg-light card mt-3 ">
+    <h1 class="display-1 mx-5">Calculator</h1>
+  </div>
+
+<div class="calculator body card shadow-lg rounded  my-5">
+  <input placeholder="_ _ _ _ _ _ _ _" type="text" class="calculator-screen z-depth-1" [(ngModel)]="screenValue" disabled />
+  <div class="calculator-keys">
+    <button type="button" class="card shadow num d-flex align-items-center rounded" (click)="onButtonClick('+')">+</button>
+    <button type="button" class="card shadow num d-flex align-items-center rounded" (click)="onButtonClick('-')">-</button>
+    <button type="button" class="card shadow num d-flex align-items-center rounded" (click)="onButtonClick('*')">&times;</button>
+    <button type="button" class="card shadow num d-flex align-items-center rounded" (click)="onButtonClick('/')">&divide;</button>
+
+    
+    <button type="button" value="7" class="card shadow numer d-flex align-items-center rounded"  (click)="onButtonClick('7')">7</button>
+    <button type="button" value="8" class="card shadow numer d-flex align-items-center rounded"  (click)="onButtonClick('8')">8</button>
+    <button type="button" value="9" class="card shadow numer d-flex align-items-center rounded"  (click)="onButtonClick('9')">9</button>
+    
+    <button type="button" value="4" class="card shadow numer d-flex align-items-center rounded"  (click)="onButtonClick('4')">4</button>
+    <button type="button" value="5" class="card shadow numer d-flex align-items-center rounded"  (click)="onButtonClick('5')">5</button>
+    <button type="button" value="6" class="card shadow numer d-flex align-items-center rounded"  (click)="onButtonClick('6')">6</button>
+    
+    <button type="button" value="1" class="card shadow numer d-flex align-items-center rounded"  (click)="onButtonClick('1')">1</button>
+    <button type="button" value="2" class="card shadow numer d-flex align-items-center rounded"  (click)="onButtonClick('2')">2</button>
+    <button type="button" value="3" class="card shadow numer d-flex align-items-center rounded"  (click)="onButtonClick('3')">3</button>
+    
+    <button type="button" value="0" class="card shadow numer d-flex align-items-center rounded"  (click)="onButtonClick('+')">0</button>
+    <button type="button" class="card shadow numer d-flex align-items-center rounded" value="." (click)="onButtonClick('.')">.</button>
+    <button type="button" class="all-clear function card shadow dan d-flex align-items-center rounded" value="all-clear" (click)="onButtonClick('all-clear')">AC</button>
+    
+   
+    
+    <button type="button" class="equal-sign card shadow numer d-flex align-items-center justify-content-center  rounded" (click)="onButtonClick('=')">=</button>
+  </div>
+</div>
+</div>
+<router-outlet></router-outlet>
